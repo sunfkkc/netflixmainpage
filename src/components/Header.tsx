@@ -8,7 +8,6 @@ import { FaSearch } from "react-icons/fa";
 import { BsBellFill } from "react-icons/bs";
 import cn from "classnames";
 import CategoryTitle from "./CategoryTitle";
-import { top2030Movies } from "../model/database";
 import MoviesContainer from "./MoviesContainer";
 import { headMovies, moviesDummy1 } from "../model/movies";
 import MoviesList from "./MoviesList";
@@ -16,16 +15,8 @@ import Slider from "react-slick";
 
 function Header() {
   const [isScrollTop, setIsScrollTop] = useState(true);
-
-  let settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-  };
-
   window.addEventListener("scroll", () => {
+    //스크롤이 최상단이 아니라면 메뉴바의 배경색 fade in
     if (document.documentElement.scrollTop === 0) {
       setIsScrollTop(true);
     } else {
