@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./test1.css" rel="stylesheet" />
+    <style>
+      #parent,
+      #other {
+        border: 5px solid tomato;
+      }
+      #me {
+        background: orange;
+        position: absolute;
+      }
+      body {
+        background-image: url("./src/billboard.webp");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="parent">
+      parent
+      <div id="me">me<button>ddd</button></div>
+    </div>
+    <div>sss</div>
+  </body>
+</html>
