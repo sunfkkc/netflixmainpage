@@ -13,7 +13,7 @@ function MoviesContainer({ movies }: Props) {
       {movies.map((movie) => (
         <>
           <CategoryTitle categoryTitle={movie.categoryTitle} />
-          <MoviesList url={movie.url} categoryTitle={movie.categoryTitle} />
+          <MoviesList categoryTitle={movie.categoryTitle} />
         </>
       ))}
     </MoviesContainerBlock>
